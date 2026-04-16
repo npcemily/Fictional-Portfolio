@@ -1,0 +1,285 @@
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    padding-bottom: 75px;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-align: center;
+    margin: 2px;
+    padding-top: 10px;
+    font-size: 4em;
+}
+
+h2 {
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 3px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    font-variant: small-caps;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 0;
+    margin: 10px;
+}
+
+.active {
+    color: rgb(245, 207, 170);
+}
+
+#resume {
+    display: grid;
+    grid-template-areas:
+    "contact experience" 
+    "education experience"
+    "skills certs";
+    grid-template-columns: 30vw auto;
+    gap: 0 20px;
+}
+
+.left {
+    background-color: rgb(243, 243, 243);
+}
+
+h3 {
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(240, 180, 120);
+}
+
+span {
+    font-weight: bold;
+}
+
+#contact {
+    grid-area: contact;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#education {
+    grid-area: education;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#skills {
+    grid-area: skills;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#skills ul {
+    list-style-type: none;
+    columns: 3;
+    column-gap: 0;
+}
+
+#experience {
+    grid-area: experience;
+}
+
+#certs {
+    grid-area: certs;
+}
+
+#certs ul {
+    list-style-type: none;
+    columns: 3;
+    padding-left: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+table caption {
+    font-size: 180%;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+table {
+    width: auto;
+    table-layout: fixed;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    padding-right: 10px;
+}
+
+td div {
+    display: flex;
+    padding-top: 20px;
+}
+
+td div.top {
+    padding-top: 15px;
+}
+
+#coverLetter {
+    display: in-line flex;
+    margin: 80px;
+    border: 1px solid rgb(223, 221, 221);
+    box-shadow: 1px 1px 5px darkgrey;
+}
+
+#info {
+    margin-left: 10px;
+}
+
+#info span {
+    font-size: 1.5em;
+}
+
+#letter {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#letter mark {
+    background-color: rgb(240, 180, 120);
+}
+
+#audio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#goals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100vw;
+}
+
+.goals-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: auto;
+  }
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.form-column {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone],
+textarea {
+    width: 100%;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 4px;
+}
+
+input[type=text],
+input[type=email],
+input[type=phone] {
+    height: 29px;
+}
+
+.bold {
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+fieldset {
+    border-radius: 4px;
+    width: 94%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid rgb(82, 82, 82);
+}
+
+legend {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+select {
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 25%;
+    height: 35px;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: lightgrey;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px darkgray;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(219, 217, 217);
+}

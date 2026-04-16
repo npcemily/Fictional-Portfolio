@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+        <title>Jane Doe's Career Goals</title>
+    </head>
+    <body>
+        <header>
+            <h1>Jane Doe</h1>
+            <h2>Web Developer</h2>
+            <nav>
+                <ul>
+                    <li><strong><a class="nav-link" href="resume.html">Resume</a></strong></li>
+                    <li><strong><a class="nav-link" href="coverletter.html">Cover Letter</a></strong></li>
+                    <li><strong><a class="nav-link active" href="goals.html">Career Goals</a></strong></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section id="audio">
+                <audio src="media/clarity-zoo-main-version-3620-03-15.mp3" controls></audio>
+            </section>
+            <section id="goals">
+                <div class="goals-column">
+                    <h3>Goal One</h3>
+                    <img src="images/pexels-pavel-danilyuk-8112206.jpg" alt="Certificate" width="500px">
+                    <p>Earn a WGU Front End Web Development Certificate and<br>
+                        an IBM Back-End Development Professional Certificate within 1 year</p>
+                </div>
+                <div class="goals-column">
+                    <h3>Goal Two</h3>
+                    <video src="media/3196062-uhd_3840_2160_25fps.mp4" controls width="600px"></video>
+                    <p>Build a stronger professional network within 6 months<br>
+                        by attending at least two industry conferences and connecting with 4 new contacts</p>
+                </div>
+            </section>
+            <section id="contactForm">
+                <h3>Contact Me</h3>
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                    <div class="form-container">
+                        <div class="form-column">
+                            <label for="firstName" class="bold">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                            <label for="lastName" class="bold">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                            <label for="userEmail" class="bold">Email Address:</label>
+                            <input type="email" name="userEmail" id="userEmail" placeholder="example@example.com" required>
+                            <label for="phoneNum" class="bold">Phone Number:</label>
+                            <input type="phone" name="phoneNum" id="phoneNum" required>
+                            <input type="submit" name="submitBtn" id="submitBtn" value="Submit">
+                        </div>
+                        <div class="form-column">
+                            <label for="company" class="bold">Company Name:</label>
+                            <input type="text" name="company" id="company" required>
+                            <label for="message" class="bold">Message:</label>
+                            <textarea name="message" id="message" rows="8" placeholder="Hello..." required></textarea>
+                            <fieldset>
+                                <legend>Best Contact Time/Method:</legend>
+                                <label for="am">A.M.</label>
+                                <input type="radio" name="contactTime" id="am" value="am">
+                                <label for="pm">P.M.</label>
+                                <input type="radio" name="contactTime" id="pm" value="pm">
+                                <label for="anyTime">Anytime</label>
+                                <input type="radio" name="contactTime" id="anyTime" value="anytime">
+                                <label for="method">Method:</label>
+                                <select name="method">
+                                    <option value="phone">Phone</option>
+                                    <option value="email">Email</option>
+                                    <option value="text">Text</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            Sources: <cite>https://uppbeat.io/t/zoo/clarity</cite>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<cite>https://www.pexels.com/video/group-of-people-gathered-around-a-table-having-discussions-3196062/</cite>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<cite>https://www.pexels.com/photo/selectvie-focus-photo-of-a-lady-justice-statuette-and-diploma-8112206/</cite>
+        </footer>
+    </body>
+</html>

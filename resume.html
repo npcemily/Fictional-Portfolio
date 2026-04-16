@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+        <title>Jane Doe's Resume</title>
+    </head>
+    <body>
+        <header>
+            <h1>Jane Doe</h1>
+            <h2>Web Developer</h2>
+            <nav>
+                <ul>
+                    <li><strong><a class="nav-link active" href="resume.html">Resume</a></strong></li>
+                    <li><strong><a class="nav-link" href="coverletter.html">Cover Letter</a></strong></li>
+                    <li><strong><a class="nav-link" href="goals.html">Career Goals</a></strong></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <div id="resume">
+            <section id="contact" class="left">
+                <h3>Contact</h3>
+                <p>
+                    <a href="mailto:doejane@gmail.com">doejane@gmail.com</a><br>
+                    (555) 123-4567<br>
+                    Denver, CO
+                </p>
+            </section>
+            <section id="education" class="left">
+                <h3>Education</h3>
+                <p>
+                    <span>Master of Science</span><br>
+                    Information Technology<br>
+                    Web Design and Development Concentration<br>
+                    University of Denver<br>
+                    2019 - 2020
+                </p>
+                <p>
+                    <span>Bachelor of Science</span><br>
+                    Software Engineering<br>
+                    Colorado State University<br>
+                    2014 - 2018
+                </p>
+            </section>
+            <section id="skills" class="left">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                    <li>Oracle</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>Git</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <table>
+                    <caption>Experience</caption>
+                    <tr>
+                        <th>Web Developer</th>
+                        <th>Software Developer</th>
+                        <th>Software Engineer</th>
+                        <th>IT Support Technician</th>
+                    </tr>
+                    <tr>
+                        <td>University of Denver</td>
+                        <td>Audible, Inc.</td>
+                        <td>CVS Health</td>
+                        <td>Aspen Valley Hospital</td>
+                    </tr>
+                    <tr>
+                        <td>2023 - Current</td>
+                        <td>2021 - 2023</td>
+                        <td>2020 - 2021</td>
+                        <td>2016 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="top">Develop and maintain web platforms utilizing diverse programming languages</div>
+                        </td>
+                        <td>
+                            <div class="top">Develop, test, and maintain software components and applications</div>
+                        </td>
+                        <td>
+                            <div class="top">Develop, test, and maintain software components and applications</div>
+                        </td>
+                        <td>
+                            <div class="top">Maintain IT systems and assist users with both common and complex technical challenges</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Implement client-side scripting to create highly responsive user interfaces</div>
+                        </td>
+                        <td>
+                            <div>Write maintainable and scalable code for software components as part of an agile engineering team</div>
+                        </td>
+                        <td>
+                            <div>Write maintainable and scalable code for software components as part of a waterfall engineering team</div>
+                        </td>
+                        <td>
+                            <div>Document and track user issues using help desk ticketing system, ensuring resolution in a timely manner</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>Handle back-end development tasks to ensure optimal server-side application logic</div>
+                        </td>
+                        <td>
+                            <div>Identify and resolve software defects through code review, log analysis, metrics examination, debugging, and other troubleshooting methods</div>
+                        </td>
+                        <td>
+                            <div>Identify and resolve software defects through code review, log analysis, metrics examination, debugging, and other troubleshooting methods</div>
+                        </td>
+                        <td>
+                            <div>Provide IT support to end users, troubleshooting technical issues, and ensuring smooth operation of hardware and software systems</div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="certs">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>AWS Certified Cloud Practitioner</li>
+                    <li>CompTIA Project+</li>
+                    <li>CompTIA Security+</li>
+                    <li>ITIL® Foundation Certification</li>
+                    <li>Oracle Database SQL Associate</li>
+                    <li>Certified Secure Software Lifecycle Professional</li>
+                    <li>CIW JavaScript Specialist</li>
+                    <li>CIW Database Design Specialist</li>
+                    <li>CIW Advanced HTML5 & CSS3 Specialist</li>
+                </ul>
+            </section>
+            </div>
+        </main>
+        <footer>
+            <article>
+                <div id="showDate"></div>
+                <script>
+                    document.getElementById("showDate").textContent = "Date: " + new Date().toDateString();
+                    console.log("Date shown!");
+                </script>
+            </article>
+        </footer>
+    </body>
+</html>
