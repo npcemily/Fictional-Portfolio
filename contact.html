@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Jane Doe's Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jane Doe</h1>
+        <h2>Web Developer</h2>
+        <nav>
+            <ul>
+                <li><strong><a class="nav-link" href="index.html">Resume</a></strong></li>
+                <li><strong><a class="nav-link" href="coverletter.html">Cover Letter</a></strong></li>
+                <li><strong><a class="nav-link active" href="contact.html">Contact</a></strong></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="contactForm">
+            <h3>Contact Me</h3>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <div class="form-container">
+                    <div class="form-column">
+                        <label for="firstName" class="bold">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                        <label for="lastName" class="bold">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                        <label for="userEmail" class="bold">Email Address:</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="example@example.com" required>
+                        <label for="phoneNum" class="bold">Phone Number:</label>
+                        <input type="phone" name="phoneNum" id="phoneNum" required>
+                        <input type="submit" name="submitBtn" id="submitBtn" value="Send">
+                    </div>
+                    <div class="form-column">
+                        <label for="company" class="bold">Company Name:</label>
+                        <input type="text" name="company" id="company" required>
+                        <label for="message" class="bold">Message:</label>
+                        <textarea name="message" id="message" rows="8" placeholder="Hello..." required></textarea>
+                        <fieldset>
+                            <legend>Best Contact Time/Method:</legend>
+                            <label for="am">A.M.</label>
+                            <input type="radio" name="contactTime" id="am" value="am">
+                            <label for="pm">P.M.</label>
+                            <input type="radio" name="contactTime" id="pm" value="pm">
+                            <label for="anyTime">Anytime</label>
+                            <input type="radio" name="contactTime" id="anyTime" value="anytime">
+                            <label for="method">Method:</label>
+                            <select name="method">
+                                <option value="phone">Phone</option>
+                                <option value="email">Email</option>
+                                <option value="text">Text</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
